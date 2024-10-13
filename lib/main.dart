@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:food_hub_2/Admin/Items/items.dart';
 import 'package:food_hub_2/Screens/HomeView/home_view.dart';
 import 'package:food_hub_2/Screens/SplashView/splash_screen.dart';
 import 'package:food_hub_2/Services/Stripe/stripe_keys.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: Items(),
     );
   }
 }
